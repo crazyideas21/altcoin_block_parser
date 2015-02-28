@@ -4,18 +4,6 @@ transaction details to MongoDB. Works on Unix and Cygwin.
 
 Written by: Danny Y. Huang (http://sysnet.ucsd.edu/~dhuang)
 
-Prerequisites: 
-
-- pymongo (http://api.mongodb.org/python/current/installation.html)
-- MongoDB (http://www.mongodb.org)
-- Bitcoin-QT or the standard QT-client of any altcoins.
-
-Usage:
-
-0. Install and run the prerequisites.
-1. Fill in the configuration section for this script; see the code.
-2. Run the script: python parser.py.
-
 """
 import pymongo
 from jsonrpc import ServiceProxy, JSONRPCException
@@ -33,12 +21,12 @@ import random
 WORKER_COUNT = 15
 
 # Name of the database.
-DB_NAME = 'blockchain'
+DB_NAME = 'blockchain_test'
 
 # Which RPC port to have the QT-client listen on. This can be a random number if you want.
 RPC_PORT = 36184
 
-# The full path of the QT client of the coin.
+# The full path of the QT client of the coin. Please change it.
 COIN_QT_CLIENT_FULL_PATH = '/please/set/this'
 
 # Whether to rebuild the coin database. If you're running this script for the first time,
